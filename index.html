@@ -16,20 +16,38 @@
     <div class="container">
     </div>
 
-    <div class="d-flex flex-row">
+    <div class="d-lg-flex d-md-flex flex-row">
 
-      <nav class="navbar navbar-expand-md navbar-light bg-none" style="position: absolute; width: 80%;">
-        <div class="navbar-brand d-flex flex-row p-3">
+
+    <div class="d-none d-lg-block d-md-block">
+      <div class="col-lg-4 col-sm-12 pl-4 position-absolute">
+        <div class="mx-auto col-sm-6 col-lg-12 d-flex flex-row p-3">
           <a href="https://queenlyapp.co"><img src="./img/queenly_app_logo_website.png" width="56"/></a>
           <a href="https://queenlyapp.co"><h3 style="color:#58117F;padding-top:12px;padding-left:10px;">Queenly</h3></a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-      <img src="./img/queenly_ad_sophia.jpg" width="50%" height="50%"/>
-      <div class="heading" style="background-color: #58117F; width: 50%; padding-left: 50px;">
-        <nav class="navbar navbar-expand-md navbar-light bg-none ">
+      </div>
+    </div>
+    <div class="d-block d-md-none">
+      <div class="mx-auto col-lg-4 col-sm-12 pl-4 position-static" style="width: 250px">
+        <div class="mx-auto col-sm-4 col-lg-12 d-flex flex-row p-3">
+          <div>
+            <a href="https://queenlyapp.co"><img src="./img/queenly_app_logo_website.png" width="56"/></a>
+          </div>
+          <div>
+            <a href="https://queenlyapp.co"><h3 style="color:#58117F;padding-top:12px;padding-left:10px;">Queenly</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="d-none d-lg-block d-md-block" width="50%" height="50%">
+        <img src="./img/queenly_ad_sophia.jpg" width="100%" height="100%" />
+      </div>
+      <div class="d-block d-md-none" width="100%" height="100%">
+        <img src="./img/queenly_ad_sophia.jpg" width="100%" height="100%"/>
+      </div>
+      <div class="heading col-lg-6 col-sm-6 p-4" style="background-color: #58117F;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none ">
           <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 mt-4" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item mr-5">
@@ -44,19 +62,27 @@
             </ul>
           </div>
         </nav>
-        <h2 class="text-white font-weight-regular" style="width: 50%; padding-top: 150px;">Find your dream dress today!</h2>
-        <p class="text-white font-weight-light" style="width: 50%">Queenly offers affordable dresses in all sizes for your special occasion</p>
-        <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
+        <h2 class="pt-4"> </h2>
+        <div class="pt-5 pb-5">
+          <h2 class="text-white font-weight-regular text-center text-lg-left">Your dream dress on one platform!</h2>
+          <p class="text-white font-weight-light text-lg-left text-center text-lg-left pb-2">Find affordable dresses in all sizes for your special occasion</p>
+          <div class="d-none d-lg-block d-md-block">
+            <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
+          </div>
+          <div class="d-flex d-md-none col-xs-6 mx-auto justify-content-center">
+            <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div id="how-it-works" class="sell-dress-header col-12 mt-5" style="padding-top: 50px;">
       <h4 class="font-weight-regular" style="color: #58117F; text-align: center;">Sell your dresses</h4>
-      <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;">Queenly handles packaging, steaming, and shipping your dresses to our network of users.</p>
+      <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;">Queenly handles packaging, dry cleaning, and shipping your dresses to our network of users.</p>
     </div>
-    <div class="d-none col-12 center-block d-flex flex-row justify-content-center">
+    <div class="col-12 center-block d-lg-flex d-md-flex flex-row justify-content-center">
       <!-- desktop -->
-      <div class="d-none d-sm-block col-lg-3 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-3 col-md-3 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/upload_your_dress.png" width="150" height"120"/>
         </div>
@@ -64,7 +90,7 @@
         <p class="pt-2" style="text-align: center; color: #58117F;">Take a picture of your dress and tell us a little bit about it.</p>
       </div>
 
-      <div class="d-none d-sm-block col-lg-3 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-3 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/accept_an_offer.png" width="80" height"170"/>
         </div>
@@ -72,7 +98,7 @@
         <p class="pt-2" style="text-align: center; color: #58117F;">Buyers will bid on your dress.</br>Accept the highest offer.</p>
       </div>
 
-      <div class="d-none d-sm-block col-lg-3 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-3 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/send_your_dress.png" width="220" height"160"/>
         </div>
@@ -80,7 +106,7 @@
         <p class="pt-2" style="text-align: center; color: #58117F;">Print out the prepaid Queenly mailing label and drop off your dress in the mail.</p>
       </div>
 
-      <div class="d-none d-sm-block col-lg-3 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-3 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/make_money.png" width="120" height"130"/>
         </div>
@@ -93,9 +119,9 @@
       <h4 class="font-weight-regular" style="color: #58117F; text-align: center;">Find the perfect dress</h4>
       <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;">Looking for a prom, wedding, or pageant dress? Queenly offers the widest selection of styles and sizes for all special occasions</p>
     </div>
-    <div class="d-none col-12 center-block d-flex flex-row justify-content-center">
+    <div class="col-12 center-block d-lg-flex d-md-flex flex-row justify-content-center">
       <!-- desktop -->
-      <div class="d-none d-sm-block col-lg-4 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class=" col-lg-4 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/find_your_dress.png" width="80" height"170"/>
         </div>
@@ -103,42 +129,42 @@
         <p class="pt-2" style="text-align: center; color: #58117F;">Search for your size, ideal color, style, etc and we'll match you with your dream dress.</p>
       </div>
 
-      <div class="d-none d-sm-block col-lg-4 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-4 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/make_an_offer.png" width="80" height"170"/>
         </div>
         <h5 class="pb-2 pt-5" style="text-align: center; color: #58117F;">Bid on a dress</h5>
-        <p class="pt-2" style="text-align: center; color: #58117F;">Bargain on dresses you like.</p>
+        <p class="pt-2" style="text-align: center; color: #58117F;">Have more flexibility in spending. Bargain on the ones you like!</p>
       </div>
 
-      <div class="d-none d-sm-block col-lg-4 col-md-6 col-sm-6 col-xs-6 p-5">
+      <div class="col-lg-4 col-md-6 col-sm-12 p-5">
         <div class="mx-auto" style="height: 200px; display: flex; align-items: center; justify-content: center;">
           <img src="./img/check_your_mail.png" width="120" height"130"/>
         </div>
-        <h5 class="pb-2 pt-5" style="text-align: center; color: #58117F;">Check your email/mailbox</h5>
-        <p class="pt-2" style="text-align: center; color: #58117F;">You'll receive an email when the seller accepts your offer and the dress ships out.<br>You'll only be charged when the dress arrives at your door.</p>
+        <h5 class="pb-2 pt-5" style="text-align: center; color: #58117F;">Check your email</h5>
+        <p class="pt-2" style="text-align: center; color: #58117F;">You'll receive an email when a seller accepts your offer. <br>Just sit back and relax while we handle payment processing, quality inspection, and shipping right to your door.</p>
       </div>
     </div>
 
-    <div class="features-background p-2" style="background-color: rgba(118, 56, 158, 0.1);">
-      <div id="features" class="col-8 mx-auto d-flex flex-row justify-content-center pt-2">
-        <div class="screenshots d-flex">
-          <img src="./img/newsfeed.png" width="350" height="550">
+    <div class="features-background pt-4 pb-4" style="background-color: rgba(118, 56, 158, 0.1);">
+      <div id="features" class="col-lg-8 col-sm-12 mx-auto d-lg-flex d-md-flex flex-row justify-content-center pt-2">
+        <div class="screenshots d-flex col-lg-4 col-sm-10 mx-auto">
+          <img src="./img/newsfeed.png" width="306" height="500">
         </div>
-        <div class="features-youll-love col-10">
+        <div class="features-youll-love col-lg-10 col-sm-12">
           <h4 class="font-weight-regular pt-4" style="color: #58117F; text-align: center;">Features you'll love</h4>
           <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;"></p>
-          <div class="features-lists d-flex flex-row justify-content-center">
-            <div class="features-list-left col-6">
+          <div class="features-lists d-lg-flex d-md-flex flex-row justify-content-center">
+            <div class="features-list-left col-lg-6 col-sm-12">
               <ul>
                 <li>
                   <h6>ISO (In Search Of)</h6>
-                  <p>Looking for the perfect prom dress? Queenly will let you keep track of your searches because we know that finding your dream dress takes time</p>
+                  <p>Looking for the perfect prom dress? Queenly will save your ISO's so you can keep track of them. We know that finding your dream dress takes time!</p>
                 </li>
 
                 <li>
                   <h6>Title verification</h6>
-                  <p>Have a pageant title? Get the purple check</p>
+                  <p>Have a pageant title? Get verified for on your dresses</p>
                 </li>
 
                 <li>
@@ -147,7 +173,7 @@
                 </li>
               <ul>
             </div>
-            <div class="features-list-right col-6">
+            <div class="features-list-right col-lg-6 col-sm-12">
               <ul>
                 <li>
                   <h6>Save a dress for later</h6>
@@ -156,12 +182,17 @@
 
                 <li>
                   <h6>Inclusive sizing</h6>
-                  <p>We list sizes from 0 to 32</p>
+                  <p>We list sizes from 0 to 32 because every size is fit for a queen</p>
                 </li>
 
                 <li>
                   <h6>Order tracking</h6>
                   <p>We’ll send you updates on each step of the offer to delivery process</p>
+                </li>
+
+                <li>
+                  <h6>Buyer protection guaranteed</h6>
+                  <p>Queenly processes payments on the secure Stripe platform and conducts thorough quality checks on all dresses</p>
                 </li>
               <ul>
             </div>
@@ -171,12 +202,19 @@
     </div>
 
 
-    <div class="features-background mt-4 pb-5" style="">
-      <div id="contact-us" class="col-6 mx-auto d-flex flex-row justify-content-center mt-4">
-        <div class="contact-us-address d-flex pt-5">
-          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCS4H2wLNj9OUi8Ulhjo89jKNpd2Lp_IzQ'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.com/'>embed google map wordpress</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d2fc882969fdb6566aa8ca25f7f71ef80084f55b'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(37.788471,-122.3935674),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.788471,-122.3935674)});infowindow = new google.maps.InfoWindow({content:'<strong>Queenly Headquarters</strong><br>299 Fremont St<br>94105 San Francisco<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    <div class="contact-us-background mt-4 pb-5" style="">
+      <div id="contact-us" class="col-lg-6 col-md-8 col-sm-12 mx-auto d-lg-flex d-md-flex flex-row justify-content-center mt-4">
+        <div class="col-lg-12 col-md-12 col-sm-6 contact-us-address d-lg-flex pt-5">
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCS4H2wLNj9OUi8Ulhjo89jKNpd2Lp_IzQ'>
+          </script>
+          <div class="col-lg-12 col-sm-12" style='overflow:hidden;height:400px;'>
+            <div id='gmap_canvas' style='height:400px;'>
+              </div>
+              <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.com/'>embed google map wordpress</a> 
+              <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d2fc882969fdb6566aa8ca25f7f71ef80084f55b'></script>
+              <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(37.788471,-122.3935674),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.788471,-122.3935674)});infowindow = new google.maps.InfoWindow({content:'<strong>Queenly Headquarters</strong><br>299 Fremont St<br>94105 San Francisco<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
         </div>
-        <div class="features-youll-love col-10 pt-4">
+        <div class="features-youll-love col-lg-10 col-md-6 col-md-4 pt-4">
           <h4 class="font-weight-regular pt-4 pl-4 pb-4" style="color: #58117F;">Contact Us</h4>
           <h5 class="font-weight-regular pl-4">Queenly Headquarters</h5>
           <p class="font-weight-light pt-2 pl-4" style="">
@@ -191,17 +229,23 @@
     </div>
 
     <div class="meet-the-team mt-4 pb-4" style="background-color: #58117F;">
-      <div class="col-10 mx-auto justify-content-center mt-4">
-        <div class="meet-the-team-pic pt-5 col-6 mx-auto">
+      <div class="col-lg-10 col-md-10 col-sm-12 mx-auto justify-content-center mt-4">
+        <div class="col-lg-6 col-md-8 col-sm-10 meet-the-team-pic pt-5 mx-auto">
           <h4 class="font-weight-regular pt-4 pl-4 pb-4 text-white" style="color: #58117F; text-align: center;">
-            Meet the team
+            About Queenly
           </h4>
-          <div class="col-8 mx-auto">
+          <div class="col-lg-8 col-md-8 col-sm-10 mx-auto justify-content-center">
             <img src="./img/kathytrisha.jpg" width="300" height="208">
           </div>
           <p class="font-weight-regular pl-4 pt-4 text-white" style="text-align: center;">Trisha Bantigue, CEO and co-founder<br>Kathy Zhou, CTO and co-founder</p>
+          <h4 class="font-weight-regular pl-4 pt-4 text-white" >Our story</h4>
+          <p>
           <p class="font-weight-light pl-4 pt-4 text-white" style="text-align: left; text-indent: 20px;">
-            Trisha (right) and Kathy (left) first met when they both interned at the consumer analytics startup InfoScout. Together they've combined their love of fashion, pageants, and startups to found Queenly.<br>Trisha is a graduate of Berkeley and has worked at Facebook and Uber. Kathy is a graduate of the University of Pennsylvania and has been a software engineer for Venmo and Pinterest. 
+            Queenly originated from the pageant industry--the founders saw a unique problem with observing thousands of girls experiencing trouble finding the perfect formal dress for their special night. Retail stores had limiting choices and unaffordable prices. They also saw that girls utilized unsafe platforms to transact and were often scammed. This was extremely disheartening for them, and they decided it was time to create something better that girls deserved.
+            </br></br>
+            Trisha (right) and Kathy (left) first met when they both interned at a consumer analytics startup in San Francisco, CA in 2014. Together, they've combined their love of fashion, pageants, supporting women and tech startups to found Queenly. 
+            </br></br>
+            Trisha is a graduate of UC Berkeley and has worked at Google, Facebook and Uber. For almost 5 years now, she has competed in various pageant systems and currently is a member of the Miss Earth USA board of directors. Kathy is a graduate of the University of Pennsylvania and has been a software engineer for Venmo and Pinterest. She has also delved into pageantry, has won a title, and plans on continuing her streak. Both are profoundly passionate in constant innovation and empowering those around them to be the best version they can be.
           </p>
         </div>
       </div>
@@ -209,18 +253,18 @@
 
     <!-- footer -->
 
-    <div class="d-flex justify-content-center pt-4">
+    <div class="col-12 d-flex justify-content-center pt-4">
       <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./tos.html">Terms of Service</a>
+            <li class="nav-item" style="text-align: center;">
+              <a class="nav-link" style="text-align: center;" href="./tos.html">Terms of Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./privacypolicy.html">Privacy Policy</a>
+              <a class="nav-link" style="text-align: center;" href="./privacypolicy.html">Privacy Policy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./faqs.html">FAQs</a>
+              <a class="nav-link" style="text-align: center;" href="./faqs.html">FAQs</a>
             </li>
           </ul>
         </div>
@@ -232,16 +276,16 @@
         <div class="navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/queenlyapp/">Facebook</a>
+              <a class="nav-link" style="text-align: center;" href="https://www.facebook.com/queenlyapp/">Facebook</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.instagram.com/queenlyapp/">Instagram</a>
+              <a class="nav-link" style="text-align: center;" href="https://www.instagram.com/queenlyapp/">Instagram</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://twitter.com/queenlyapp">Twitter</a>
+              <a class="nav-link" style="text-align: center;" href="https://twitter.com/queenlyapp">Twitter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/company/queenly/">LinkedIn</a>
+              <a class="nav-link" style="text-align: center;" href="https://www.linkedin.com/company/queenly/">LinkedIn</a>
             </li>
           </ul>
         </div>
