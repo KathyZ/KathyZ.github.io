@@ -10,6 +10,10 @@
     <link rel="icon" href="./img/queenly_app_favicon.png">
 
     <title>Queenly - Buy and Sell Dresses</title>
+    <style>
+      .google-button:hover { outline: 0 !important }
+      .google-button { outline: 0 !important; }
+    </style>
   </head>
   <body>
   <div>
@@ -70,6 +74,12 @@
           <div class="d-flex d-md-none col-xs-6 mx-auto justify-content-center">
             <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
           </div>
+          <button class="google-button d-none d-lg-flex" onclick="scrollToAndroidSurvey()" style="border: none; background: none; margin-left: -7px; margin-top: 10px;">
+            <img src="./img/googleplay.png" width="220"/>
+          </button>
+          <button class="google-button d-flex d-md-none col-xs-6 mx-auto justify-content-center" onclick="scrollToAndroidSurvey()" style="border: none; background: none; margin-left: -7px; margin-top: 10px;">
+            <img src="./img/googleplay.png" width="220"/>
+          </button>
         </div>
       </div>
       <div class="d-block d-md-none" width="100%" height="100%">
@@ -205,7 +215,7 @@
     <div class="d-none d-lg-block d-md-block pt-3">
       <div id="how-it-works-buying" class="sell-dress-header col-12 mt-5" style="padding-top: 50px;">
         <h4 class="font-weight-regular" style="color: #58117F; text-align: center;">Find us on the Apple App Store</h4>
-        <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;">Our web marketplace is coming soon :)</p>
+        <p class="font-weight-light pt-2" style="color: #58117F; text-align: center;">Our web and Android marketplace is coming soon :)</p>
       </div>
       <div class="d-none d-lg-flex d-md-flex mx-auto justify-content-center">
         <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
@@ -213,6 +223,12 @@
       <div class="d-flex d-md-none col-xs-6 mx-auto justify-content-center">
         <a href="https://itunes.apple.com/app/id1439763978"><img src="./img/appstore.svg" width="220" /></a>
       </div>
+      <button class="google-button d-none d-lg-flex d-md-flex mx-auto justify-content-center" onclick="scrollToAndroidSurvey()" style="border: none; background: none; margin-left: -7px; margin-top: 10px;">
+        <img src="./img/googleplay.png" width="220"/>
+      </button>
+      <button class="google-button d-flex d-md-none col-xs-6 mx-auto justify-content-center" onclick="scrollToAndroidSurvey()" style="border: none; background: none; margin-left: -7px; margin-top: 10px;">
+        <img src="./img/googleplay.png" width="220"/>
+      </button>
     </div>
 
     <div class="contact-us-background mt-4 pb-5" style="">
@@ -297,11 +313,42 @@
             Advisors/Investors
           </h4>
           <div class="d-flex col-lg-8 col-md-8 col-sm-10 mx-auto justify-content-center">
-            <img class="ml-4" src="./img/wefunder.jpg" width="200" height="58">
+            <div class="mx-auto justify-content-center">
+              <img class="ml-4" src="./img/wefunder.jpg" style="border-radius: 100px;" width="150" height="150">
+              <p class="font-weight-regular pl-4 pt-4" style="text-align: center;">
+                Wefunder</br>
+              </p>
+            </div>
+            <!--
+            <p class="font-weight-regular pl-4 pt-4" style="text-align: center;"></p>
+            <div class="mx-auto justify-content-center">
+              <img class="ml-4" src="./img/brandon.jpg" width="200" height="200" style="border-radius: 100px;">
+              <p class="font-weight-regular pl-4 pt-4" style="text-align: center;">Brandon Hill, Greo CEO/Founder</p>
+              <p class="font-weight-regular pl-4" style="text-align: center;">"Why work a jobby job when you can pursue your dreams"</p>
+            </div>
+            <div class="mx-auto justify-content-center">
+              <img class="ml-4" src="./img/daniel.jpg" width="200" height="200" style="border-radius: 100px;">
+              <p class="font-weight-regular pl-4 pt-4" style="text-align: center;">Daniel Ha, Disqus CEO/Founder</p>
+              <p class="font-weight-regular pl-4" style="text-align: center;">"It's actually pronounced 'discuss' but I am numb to the pain now"</p>
+            </div> -->
+            <div class="mx-auto justify-content-center">
+              <img class="ml-4" src="./img/corey.png" width="150" height="150" style="border-radius: 100px;">
+              <p class="font-weight-regular pl-4 pt-4" style="text-align: center;">
+                Corey Goodman</br> Investor, venBio MP
+              </p>
+            </div>
+            <div class="mx-auto justify-content-center">
+              <img class="ml-4" src="./img/steven.jpg" width="150" height="150" style="border-radius: 100px;">
+              <p class="font-weight-regular pl-4 pt-4" style="text-align: center;">Steven Hsiao, SpoonRocket CEO/Founder</p>
+            </div>
+            <p class="font-weight-regular pl-4 pt-4" style="text-align: center;"></p>
           </div>
-          <p class="font-weight-regular pl-4 pt-4" style="text-align: center;"></p>
         </div>
       </div>
+
+    <div class="justify-content-center d-flex" id="airtable-survey-android">
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrw2et6cHp3L2lBk" frameborder="0" onmousewheel="" width="500px" height="600" style="background: transparent;"></iframe>
+    </div>
 
     <!-- footer -->
 
@@ -355,4 +402,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script>
+        var elmnt = document.getElementById("airtable-survey-android");
+
+    function scrollToAndroidSurvey() {
+      elmnt.scrollIntoView(true); // Top
+    }
+</script>
   </body>
